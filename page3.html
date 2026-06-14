@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<title>Page 3</title>
+
+<style>
+
+body{
+color:#123456;
+background:#d0f;
+}
+
+main{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:8%;
+margin-bottom:50px;
+padding:15px;
+background:rgba(0,0,255,0.6);
+}
+
+h1,p{
+color: #0ff;
+font-weight: bold;
+margin-top:100px;
+margin-bottom:100px;
+}
+
+footer{
+  position:fixed;
+  bottom:0;
+  left:0;
+  width:100%;
+  height:15%;
+  margin-top:40px;
+  padding:4px;
+  color:white;
+ font-size: 12px; background:rgba(0,0,0,0.9);
+}
+
+
+.neon-btn{
+display:inline-block;
+text-decoration:none;
+border:2px solid #00ffff;
+border-radius:10px;
+background:rgba(255,0,0,0.6);
+box-shadow:
+0 0 5px #00ffff,
+0 0 10px #00ffff,
+0 0 20px #00ffff;
+transition:0.3s;
+color:#fff;
+font-size:12px;
+font-weight:bold;
+margin:10px auto;
+padding:10px;
+}
+
+.neon-btn:hover{
+background:#ff00ff;
+color:black;
+}
+
+.home{
+position:fixed;
+bottom:30%;
+left:5%;
+border-radius:50px;
+width:60px;
+height:60px;
+color:white;
+padding:10px;
+text-decoration:none;
+font-weight:bold;
+background:rgba(0,0,255,0.8);
+}
+
+</style>
+
+</head>
+
+<body>
+
+<a href="index.html" class="home">
+<center>Drag Home</center>
+</a>
+
+<header>
+
+<main>
+
+<button class="neon-btn"
+onclick="window.location.href='page1.html';">
+Open Page 1
+</button>
+
+<button class="neon-btn"
+onclick="window.location.href='page2.html';">
+Open Page 2
+</button>
+
+<button class="neon-btn"
+onclick="window.location.href='page3.html';">
+Open Page 3
+</button>
+
+</main>
+
+<h1>Dreams, Hope & Inspiration</h1>
+
+<p>
+Welcome to a page dedicated to dreams, positive thoughts and
+the power of believing in yourself.
+</p>
+
+<p>
+Every great achievement begins with a dream. The future belongs
+to those who continue moving forward even when challenges appear.
+</p>
+
+<p>
+Music teaches us that beautiful things are created one note at a time.
+Success is built the same way, one step at a time.
+</p>
+
+<p>
+Never stop believing in your abilities. Every day is another
+opportunity to learn, grow and become stronger than yesterday.
+</p>
+
+<p>
+Hope gives us strength during difficult moments and reminds us
+that brighter days are always ahead.
+</p>
+
+<p>
+The people who succeed are not always the strongest or the smartest.
+They are often the ones who refuse to give up.
+</p>
+
+<p>
+Your story is still being written. Continue chasing your goals,
+improving your skills and building the future you want.
+</p>
+
+<p>
+May every song you hear inspire confidence, happiness and the courage
+to keep moving forward.
+</p>
+
+<p>
+Remember that kindness, love and determination can change lives.
+The smallest positive action can create a powerful impact.
+</p>
+
+<p>
+Believe in yourself. Trust the journey. Enjoy the music and keep
+dreaming big.
+</p>
+
+</header>
+
+<audio id="demo" autoplay loop>
+<source src="sound1.mp3" type="audio/mpeg">
+</audio>
+
+<footer>
+
+<center>©2026 Copyright Reserved</center>
+<center>By Ahmed K SanShania</center>
+
+</footer>
+
+<script src="music.js"></script>
+
+<script>
+
+const inspirationMessages = [
+"🌟 Believe in your dreams",
+"✨ Your future is bright",
+"💖 You are stronger than you think",
+"🎵 Every day is a new opportunity",
+"🌹 Keep moving forward",
+"💕 Success begins with determination",
+"🚀 Great things take time",
+"🥰 Never stop learning",
+"🌈 Better days are coming",
+"❤️ Happiness grows when shared"
+];
+
+setInterval(() => {
+
+const text = document.createElement("div");
+
+text.innerHTML =
+inspirationMessages[
+Math.floor(Math.random() * inspirationMessages.length)
+];
+
+text.style.position = "fixed";
+text.style.bottom = "20px";
+text.style.right = "20px";
+text.style.padding = "10px";
+text.style.color = "white";
+text.style.background = "rgba(0,0,0,0.5)";
+text.style.borderRadius = "10px";
+text.style.zIndex = "9999";
+
+document.body.appendChild(text);
+
+setTimeout(() => {
+text.remove();
+}, 4000);
+
+}, 6000);
+
+</script>
+
+</body>
+</html>

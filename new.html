@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Page 1 - My Programming Journey</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial,sans-serif;
+    background:linear-gradient(135deg,#f00,#f0f,#00f,#0ff,#0f0);
+    background-size:400% 400%;
+    animation:bgMove 10s ease infinite;
+    color:white;
+    padding-bottom:120px;
+}
+
+@keyframes bgMove{
+    0%{background-position:0% 50%;}
+    50%{background-position:100% 50%;}
+    100%{background-position:0% 50%;}
+}
+
+main{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    padding:15px;
+    background:rgba(0,0,255,0.7);
+    z-index:1000;
+    text-align:center;
+}
+
+.neon-btn{
+    display:inline-block;
+    text-decoration:none;
+    border:2px solid #00ffff;
+    border-radius:10px;
+    background:rgba(255,0,0,0.6);
+    box-shadow:0 0 5px #00ffff,
+               0 0 10px #00ffff,
+               0 0 20px #00ffff;
+    transition:.3s;
+    color:#fff;
+    font-size:12px;
+    font-weight:bold;
+    margin:5px;
+    padding:10px;
+    cursor:pointer;
+}
+
+.neon-btn:hover{
+    background:#ff00ff;
+    color:black;
+}
+
+.content{
+    max-width:900px;
+    margin:100px auto 30px;
+    padding:20px;
+}
+
+h1{
+    text-align:center;
+    margin-bottom:30px;
+}
+
+p{
+    margin-bottom:25px;
+    line-height:1.8;
+    font-size:18px;
+}
+
+.home{
+    position:fixed;
+    bottom:120px;
+    left:10px;
+    border-radius:50px;
+    width:80px;
+    height:80px;
+    color:blue;
+    padding:10px;
+    text-align:center;
+    text-decoration:none;
+    font-weight:bold;
+    background:rgba(0,255,0,0.8);
+    z-index:1000;
+}
+
+/* Testimonials */
+
+section{
+    max-width:900px;
+    margin:30px auto;
+    padding:20px;
+}
+
+.card{
+    background:rgba(255,255,255,0.9);
+    color:black;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 0 15px rgba(0,0,0,0.3);
+}
+
+.card h2{
+    text-align:center;
+    margin-bottom:20px;
+}
+
+.testimonial{
+    background:#e0f7ff;
+    padding:15px;
+    border-radius:10px;
+    margin-bottom:20px;
+}
+
+.profile-img{
+    width:60px;
+    height:60px;
+    border-radius:50%;
+    border:3px solid lime;
+    border-top:3px solid red;
+    border-bottom:3px solid blue;
+    object-fit:cover;
+}
+
+footer{
+    position:fixed;
+    bottom:0;
+    left:0;
+    width:100%;
+    padding:10px;
+    text-align:center;
+    color:white;
+    font-size:12px;
+    background:rgba(0,0,0,0.9);
+}
+
+  .glow {
+   
+   background: rgba(250,0,255,0.3);
+    border: 3px solid rgba(250,0,255,0.9); border-radius: 50px; padding: 18px; margin: 40px auto;  width: 200px;
+ font-size: 18px;
+  text-decoration: none;
+ animation: Glowing 3s infinite; color: #fff;
+  }
+  
+  @keyframes Glowing {
+    0%{box-shadow: 0 0 0 0 black;} 
+    50%{box-shadow: 0 0 0 20px transparent;}
+    
+  } 
+  
+  .glow:hover{
+  transform:scale(1);
+}
+
+#font{ color: #f0f;
+  font-family:  cursive;
+ text-shadow: 3px 0 0  #00f;           font-size: 2.20rem; font-weight: bold;
+            }
+    
+
+</style>
+</head>
+
+<body>
+
+<a href="index.html" class="home">
+Go Home
+</a>
+
+<main>
+
+<button class="neon-btn"
+onclick="location.href='page1.html'">
+Open Page 1
+</button>
+
+<button class="neon-btn"
+onclick="location.href='page2.html'">
+Open Page 2
+</button>
+
+<button class="neon-btn"
+onclick="location.href='page3.html'">
+Open Page 3
+</button>
+
+</main>
+
+<div class="content">
+
+<h1>💻 My Programming Journey</h1>
+
+<p>🪆 I am currently learning C Programming and taking my first step towards becoming a professional software developer, website developer, app creator and technology innovator.</p>
+
+<p>🔋 Every day I learn something new about variables, loops, functions, arrays and problem solving techniques.</p>
+
+<p>💻 Programming teaches patience, creativity and determination. Every challenge solved increases confidence and experience.</p>
+
+<p>🎧 Just as music combines different notes to create beautiful melodies, programming combines instructions to create powerful applications.</p>
+
+<p>💪 Success comes through practice and continuous learning. Every line of code written today helps build a better future tomorrow.</p>
+
+<p>🛀 My dream is to become a skilled programmer capable of creating websites, mobile applications and innovative technology solutions.</p>
+
+<p>🧠 Learning never stops. Every project is an opportunity to grow, improve and discover new possibilities in software engineering.</p>
+
+</div>
+
+<section id="testimonials">
+
+<div class="card">
+
+<h2>🌟 Comment Section</h2>
+<img src="Ahmed.jpg" class="profile-img" alt="Mark">
+
+<p style="color:blue;"><b>Ahmed, Kawempe:</b></p>
+
+<div class="testimonial">
+"This is going to be my year"
+</div>
+
+<img src="mark.jpg" class="profile-img" alt="Mark">
+
+<p style="color:blue;"><b>Mark, Uganda:</b></p>
+
+<div class="testimonial">
+"Kagezi built my business website fast and professionally. Highly recommended!"
+</div>
+
+<img src="jane.jpg" class="profile-img" alt="Jane">
+
+<p style="color:blue;"><b>Jane, Kampala:</b></p>
+
+<div class="testimonial">
+"Very responsive and delivered exactly what I wanted. My portfolio looks amazing!"
+</div>
+<div id="font">Leave a Comment</div>
+  <textarea type="text" name="text" placeholder="comment text"></textarea>
+</form>
+    <h1 class="glow"><a href="https://wa.me/256709387311?text=Mwana%20bigaanye!!!!">Submit</a></h1>    
+</div>
+
+</section>
+
+<audio id="demo" loop preload="auto">
+<source src="https://my-sound-sounds.netlify.app/sound5.mp3" type="audio/mpeg">
+</audio>
+
+<footer>
+<div>©2026 Copyright Reserved</div>
+<div>By Ahmed K SanShania</div>
+</footer>
+
+<script>
+
+const music = document.getElementById("demo");
+
+function startMusic(){
+    music.volume = 0.5;
+    music.play().catch(()=>{});
+}
+
+document.addEventListener("click", startMusic, {once:true});
+document.addEventListener("touchstart", startMusic, {once:true});
+
+const emotionalWords = [
+"❤️ Keep believing in yourself",
+"🌹 Great things take time",
+"💖 Every lesson matters",
+"✨ Your future is bright",
+"🎵 Success begins with effort",
+"💕 Never stop learning",
+"🥰 Knowledge creates opportunity",
+"🌟 Dreams become reality through action"
+];
+
+setInterval(()=>{
+
+const text=document.createElement("div");
+
+text.innerHTML=
+emotionalWords[
+Math.floor(Math.random()*emotionalWords.length)
+];
+
+text.style.position="fixed";
+text.style.bottom="20px";
+text.style.left="0";
+text.style.padding="10px";
+text.style.color="#f0f";
+text.style.background="rgba(0,0,0,0.6)";
+text.style.borderRadius="10px";
+text.style.zIndex="9999";
+
+document.body.appendChild(text);
+
+setTimeout(()=>{
+text.remove();
+},4000);
+
+},6000);
+
+</script>
+
+</body>
+</html>
